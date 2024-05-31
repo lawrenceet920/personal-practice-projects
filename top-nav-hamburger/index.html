@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation On Top</title>
+    <title>Hamburger</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -62,10 +62,10 @@
         function burger() {
             const ham = document.getElementById('burgerMenu');
 
-            if (ham.style.display === "block") {
+            if (ham.style.display === "grid") {
                 ham.style.display = "none";
             } else {
-                ham.style.display = 'block';
+                ham.style.display = 'grid';
             }
         }
         document.getElementById('burgerBtn').addEventListener('click', burger)
